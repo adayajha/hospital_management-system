@@ -1,0 +1,9 @@
+{
+  "info": {"name": "Hospital Support Request System", "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"},
+  "variable": [{"key": "baseUrl", "value": "http://localhost:8000/api/v1"}, {"key": "token", "value": ""}],
+  "item": [
+    {"name": "Login", "request": {"method": "POST", "header": [{"key": "Content-Type", "value": "application/json"}], "url": "{{baseUrl}}/auth/login", "body": {"mode": "raw", "raw": "{\n  \"email\": \"admin@hospital.local\",\n  \"password\": \"Admin123!\"\n}"}}},
+    {"name": "List departments", "request": {"method": "GET", "url": "{{baseUrl}}/departments"}},
+    {"name": "List tickets", "request": {"method": "GET", "header": [{"key": "Authorization", "value": "Bearer {{token}}"}], "url": "{{baseUrl}}/tickets"}}
+  ]
+}
