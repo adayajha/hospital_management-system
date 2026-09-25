@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+YOUR LOCAL README CONTENT
+=======
+GITHUB README CONTENT
+>>>>>>> origin/main
+
 # Hospital Support Request System
 
 A REST-first support system for hospital equipment, maintenance, IT and facility requests. The backend is FastAPI with MongoDB; the frontend is React/Vite.
@@ -61,3 +67,6 @@ npm run dev
 - Add email or in-app notifications.
 - Add automated unit/integration tests and CI.
 - Put the services behind HTTPS and restrict CORS to the production frontend URL.
+=======
+# hospital_management-system
+>>>>>>> e2fdc903caf85be6f67bd8a7a2112c15dcc3f008
